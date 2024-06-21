@@ -1,0 +1,41 @@
+// HeaderAdmin styles
+.navbar {
+  background-color: #000;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .mr-2 {
+    color: #fff;
+  }
+  .ml-auto.navbar-nav {
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+  .navbar-brand {
+    font-size: 1.5rem; // Larger font size for brand
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    a {
+      color: #ffffff; // White text color
+      text-decoration: none;
+      padding: 0 5px;
+
+      &:hover {
+        color: #ffffff; // White text color on hover
+      }
+    }
+  }
+
+  .nav-link {
+    color: #ffffff; // White text color
+    padding: 0.5rem 1rem; // Adjust padding for spacing
+
+    &:hover,
+    &:focus {
+      color: #ffffff; // White text color on hover/focus
+    }
+  }
+}
