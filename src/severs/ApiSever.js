@@ -3,15 +3,10 @@ import axios from "./../Untils/AxiosConfig";
 const getAllProduct = () => {
   return axios.get("products/category/smartphones");
 };
-
-const postProduct = async (
-  description,
-  images,
-  price,
-  tags,
-  title,
-  category
-) => {
+const getAllLaptop = () => {
+  return axios.get("products/category/laptops");
+};
+const postProduct = async (description, price, tags, title, category) => {
   try {
     const formData = new FormData();
     formData.append("description", description);
@@ -45,4 +40,4 @@ const DeleteProduct = (id) => {
   return axios.delete(`https://dummyjson.com/products/${id}`);
 };
 
-export { getAllProduct, putProduct, DeleteProduct, postProduct };
+export { getAllProduct, putProduct, DeleteProduct, postProduct, getAllLaptop };

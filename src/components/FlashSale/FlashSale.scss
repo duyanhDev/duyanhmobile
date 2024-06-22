@@ -1,0 +1,99 @@
+.container {
+  .sale-flash {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    justify-content: center;
+
+    li {
+      padding: 0 40px;
+      white-space: nowrap;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+      }
+    }
+    .sale-h3 {
+      font-size: 24px;
+      font-weight: 700;
+
+      .sale-h3_link {
+        color: #fc521d;
+        white-space: nowrap; /* Prevent breaking into multiple lines */
+      }
+    }
+    .phone {
+      background: #009981;
+      padding: 5px 17px;
+      border-radius: 10px;
+      .phone-text {
+        color: #000;
+      }
+    }
+    .active {
+      border: 1px solid #009981;
+      background-color: #fff;
+    }
+    .watch-laptop {
+      border: 1px solid #009981;
+      font-weight: bold;
+      padding: 5px 15px;
+      border-radius: 10px;
+      .watch-text {
+        font-size: 12px;
+        color: #000;
+      }
+    }
+    .watch-laptop-active {
+      background: #009981;
+      border-radius: 10px;
+    }
+    .timer {
+      display: flex;
+      align-items: center;
+
+      strong {
+        margin: 0 2px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #eee;
+        color: #fff;
+      }
+
+      .digit-0 {
+        background-color: #000;
+      }
+      .digit-1 {
+        background-color: #000;
+      }
+      .digit-2 {
+        background-color: #000;
+      }
+      .digit-3 {
+        background-color: #000;
+      }
+      .digit-4 {
+        background-color: #000;
+      }
+      .digit-5 {
+        background-color: #000;
+      }
+      .digit-6 {
+        background-color: #000;
+      }
+      .digit-7 {
+        background-color: #000;
+      }
+      .digit-8 {
+        background-color: #000;
+      }
+      .digit-9 {
+        background-color: #000;
+      }
+      .digit-colon {
+        background-color: #000;
+      }
+    }
+  }
+}

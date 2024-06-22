@@ -1,0 +1,24 @@
+button.slick-arrow.slick-prev {
+  background-color: #fff;
+  color: #000;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+h3 {
+  font-size: 0.75rem !important;
+  white-space: nowrap;
+  text-align: center;
+  display: grid;
+}
+
+.image {
+  width: 178px;
+  height: 364px;
+  object-fit: cover;
+  margin: auto;
+}
+.price {
+  text-align: center;
+}

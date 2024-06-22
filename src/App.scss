@@ -1,14 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap");
 
 * {
-  margin    : 0;
-  padding   : 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family        : "Brygada 1918", serif;
+  font-family: "Brygada 1918", serif;
   font-optical-sizing: auto;
-  font-weight        : weight;
-  font-style         : normal;
+  font-weight: weight;
+  font-style: normal;
+  background: #f4f4f4 !important;
+  min-height: 1500px; /* Remove height from body */
+}
+
+.App {
+  min-height: 1200px;
+  background: #f4f4f4;
+}
+
+.App .App-header {
+  position: relative;
+  min-height: 1200px; /* Ensure this inherits correctly */
 }

@@ -1,0 +1,38 @@
+.container-nav {
+  .container-nav_ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-nav_ul li {
+    margin: 10px;
+    display: grid;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .container-nav_ul li svg {
+    margin-right: 8px;
+    font-size: 1.4rem;
+    color: #fff;
+    margin: auto;
+  }
+
+  .container-nav_ul li span {
+    font-size: 10px;
+    color: #fff;
+  }
+}
+.slider-navigation {
+  width: 1200px;
+  height: 400px;
+  position: relative;
+  /* top: 217px; */
+  margin: auto;
+  top: 5%;
+}

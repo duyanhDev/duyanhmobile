@@ -1,4 +1,8 @@
 .Header-container {
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  width: 100%;
   .Header-white {
     height: 40px;
     display: flex;
@@ -144,7 +148,38 @@
     text-align: center;
   }
 }
-
+.fillter-navigation {
+  width: 1200px;
+  margin: auto;
+  background: #00483d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-navigation {
+  width: 1200px;
+  height: 400px;
+  position: relative;
+  top: 10px;
+  margin: auto;
+}
+.sale-navigation {
+  position: absolute;
+  bottom: 9%;
+  margin: auto;
+  width: 1200px;
+  left: 0;
+  right: 0;
+}
+.Product-navigation {
+  position: absolute;
+  bottom: -25%;
+  margin: auto;
+  width: 1200px;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
 @keyframes pulse {
   0% {
     transform: scale(1); /* Duy trì kích thước ban đầu */

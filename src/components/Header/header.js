@@ -2,14 +2,33 @@ import { Link } from "react-router-dom";
 import "./header.scss";
 import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import { FaTruckFast } from "react-icons/fa6";
+import { useEffect, useState } from "react";
+import Navbar from "../Nav/Navbar";
+import Slider from "../SliderBar/Slider";
 const Header = () => {
+  const [list, setList] = useState([
+    "K+ Vui Hè Nóng Cùng Euro - Giá chỉ từ 59.000đ/tháng",
+    "[Khuyến mại] Thu cũ giá cao toàn bộ sản phẩm - Trợ giá tốt nhất",
+  ]);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % list.length);
+    }, 2000);
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [list.length]);
+
   return (
     <div className="Header-container">
+      {/* <div className="slider-navigation">
+        <Slider />
+      </div> */}
       <div className="Header-white">
-        <span class="pulse"></span>
-        <span className="title">
-          [Khuyến mại] Thu cũ giá cao toàn bộ sản phẩm - Trợ giá tốt nhất
-        </span>
+        <span className="pulse"></span>
+        <span className="title ">{list[currentIndex]}</span>
         <Link className="search-to" to="/">
           Xem chi tiết
         </Link>
@@ -66,6 +85,12 @@ const Header = () => {
           <FaShoppingCart className="cart-shopping" />
           <span className="text-cart">0</span>
         </div>
+      </div>
+      <div className="fillter-navigation">
+        <Navbar />
+      </div>
+      <div className="slider-navigation">
+        <Slider />
       </div>
     </div>
   );
